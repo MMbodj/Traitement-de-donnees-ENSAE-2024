@@ -12,7 +12,7 @@ Bienvenue dans le repository du cours de traitement de données à l'ENSAE (2024
 ## Instructions d'installation
 1. Clonez ce repository pour accéder aux fichiers dans votre ordinateur en local: 
    ```bash
-   git clone https://github.com/ton-utilisateur/Traitement_de_donnees_cours_Ensae.git
+   git clone https://github.com/MMbodj/Traitement-de-donnees-ENSAE-2024.git
    ```
    NB : Vous pouvez également utiliser l'url pour accéder aux ressources par le web si vous n'êtes pas habitués à utiliser GitHub.
    
