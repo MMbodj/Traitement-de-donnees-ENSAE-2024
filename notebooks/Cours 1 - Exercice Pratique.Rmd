@@ -1,0 +1,28 @@
+---
+title: "Cours 1 - Exercice pratique pour se familiariser avec R"
+author: "Mamadou Mbodj"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+## Simulation de données
+Simuler un vecteur de données $X$ de taille 10000 suivant la normale avec $\mu = 50$ et $\sigma = 25)$.
+
+```{r}
+
+```
+
+## Estimation de la distribution de la moyenne
+Estimer une distribution de $\mu$ en utilisant $X$. Tracez la distribution.
+
+```{r}
+
+```
+
+## Espérance et variance de la moyenne
+Calculer la moyenne et la variance des la distribution estimée de $\mu$". Interprétez ces valeurs. Que pouvez-vous conclure ?
+
+```{r}
+
+```
+
