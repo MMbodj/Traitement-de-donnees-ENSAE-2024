@@ -1,16 +1,22 @@
-# Traitement de Données - ENSAE 2024
+# Traitement de données cours Ensae 2024
 
-## Description
-Ce projet concerne le traitement des données pour le cours de l'ENSAE 2024. Il inclut des scripts et des outils pour manipuler et analyser les données.
+Bienvenue dans le repository du cours de traitement de données à l'ENSAE (2024).
 
-## Structure du Projet
-- `data/` : Contient les données brutes et traitées.
-- `scripts/` : Contient les scripts R pour le traitement des données.
-- `docs/` : Contient la documentation et les notes.
-- `results/` : Contient les résultats et les graphiques produits.
+## Contenu du repository
+- **data/** : Jeux de données pour les exercices et projets.
+- **scripts/** : Scripts R utilisés dans les séances.
+- **notebooks/** : Notebooks interactifs pour illustrer les concepts.
+- **slides/** : Présentations des cours.
+- **projects/** : Projets à réaliser.
 
-## Installation
-Pour installer les dépendances nécessaires, assurez-vous d'avoir R et RStudio installés, puis exécutez :
+## Instructions d'installation
+1. Clonez ce repository pour accéder aux fichiers dans votre ordinateur en local: 
+   ```bash
+   git clone https://github.com/ton-utilisateur/Traitement_de_donnees_cours_Ensae.git
+   ```
+   NB : Vous pouvez également utiliser l'url pour accéder aux ressources par le web si vous n'êtes pas habitués à utiliser GitHub.
+   
+2. Installez les packages R nécessaires via le fichier `requirements.R`.
 
-```r
-install.packages(c("dplyr", "ggplot2", "tidyr"))
+## Ressources additionnelles
+- Liens vers les supports externes : [Google Drive](#), [GitHub Classroom](#)
