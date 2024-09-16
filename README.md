@@ -19,4 +19,6 @@ Bienvenue dans le repository du cours de traitement de données à l'ENSAE (2024
 2. Installez les packages R nécessaires via le fichier `requirements.R`.
 
 ## Ressources additionnelles
-- Liens vers les supports externes : [Google Drive](#), [GitHub Classroom](#)
+- Liens vers les supports externes* : [Google Drive](#)
+
+*Pour le moment toutes les ressources sont partagées sur ce repository. Les ressources externes seront indiquées au besoin.
