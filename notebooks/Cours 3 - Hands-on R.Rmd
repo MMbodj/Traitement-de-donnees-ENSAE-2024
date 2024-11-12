@@ -1,0 +1,152 @@
+---
+title: "Cours 2 - Hands-on R"
+author: "Mamadou Mbodj"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+# Configuration des chunks : détermine si le code R doit être affiché dans le document final
+knitr::opts_chunk$set(echo = TRUE)
+# Charger les packages nécessaires
+library(tidyverse) # Pour la manipulation des données et les graphiques
+```
+
+## Intro
+
+Ce TP explore l'analyse de données avec R. Nous allons charger un jeu de données, effectuer des opérations de nettoyage, explorer la structure, manipuler et visualiser les données.
+
+**Objectifs du TP**
+
+- Charger et explorer les données
+- Manipuler et transformer les données avec *dplyr*
+- Visualiser les données avec *ggplot2*
+
+## 1. Charger et Explorer les Données
+
+Nous utiliserons un jeu de données d'exemple mtcars, intégré à R. Il contient des informations sur différents modèles de voitures, telles que la consommation d'essence, le nombre de cylindres, et la puissance.
+
+```{r}
+# Charger les données
+data("mtcars")
+
+# Aperçu des premières lignes
+head(mtcars)
+```
+
+**Structure et résumé des données**
+
+Explorons la structure des données et le résumé statistique de chaque variable pour mieux comprendre le jeu de données.
+
+```{r}
+# Structure des données
+str(mtcars)
+
+# Résumé statistique
+summary(mtcars)
+```
+
+## 2. Manipulation des Données avec dplyr
+
+Nous allons utiliser le package dplyr pour filtrer, sélectionner, créer des variables et résumer les données.
+
+### 2.1 Filtrage et sélection de colonnes
+
+Filtrons les voitures ayant plus de 6 cylindres et sélectionnons les colonnes *mpg* (miles per gallon) et *hp* (horsepower).
+
+```{r}
+# Filtrer les voitures avec plus de 6 cylindres et sélectionner des colonnes
+filtered_data <- mtcars %>%
+  filter(cyl > 6) %>%
+  select(mpg, hp)
+
+# Afficher le résultat
+filtered_data
+```
+
+### 2.2 Création de nouvelles variables
+
+Créons une nouvelle variable qui convertit *mpg* en litres par 100 km (lp100km). Cette conversion est donnée par *lp100km = 235.21 / mpg*.
+
+```{r}
+# Ajouter la colonne lp100km
+mtcars <- mtcars %>%
+  mutate(lp100km = 235.21 / mpg)
+
+# Afficher les premières lignes
+head(mtcars)
+```
+
+### 2.3 Résumés et agrégations
+
+Calculons la moyenne de la consommation (mpg) et de la puissance (hp) par nombre de cylindres.
+
+```{r}
+# Moyenne de mpg et hp par nombre de cylindres
+summary_by_cyl <- mtcars %>%
+  group_by(cyl) %>%
+  summarise(mean_mpg = mean(mpg), mean_hp = mean(hp))
+
+# Afficher le tableau récapitulatif
+summary_by_cyl
+```
+
+## 3. Visualisation des Données avec ggplot2
+
+La visualisation est essentielle pour analyser les tendances et les relations entre les variables. Nous utiliserons *ggplot2* pour produire des graphiques basiques.
+
+### 3.1 Diagramme de dispersion : Relation entre Puissance et Consommation
+Nous allons créer un diagramme de dispersion pour visualiser la relation entre la puissance (*hp*) et la consommation (*mpg*).
+
+```{r}
+# Diagramme de dispersion
+ggplot(mtcars, aes(x = hp, y = mpg)) +
+  geom_point(color = "blue") +
+  labs(title = "Relation entre Puissance et Consommation",
+       x = "Puissance (hp)",
+       y = "Consommation (mpg)")
+```
+
+### 3.2 Histogramme de la Consommation
+
+Visualisons la distribution de la consommation (*mpg*) avec un histogramme.
+
+```{r}
+# Histogramme de mpg
+ggplot(mtcars, aes(x = mpg)) +
+  geom_histogram(bins = 10, fill = "lightgreen", color = "black") +
+  labs(title = "Distribution de la Consommation",
+       x = "Consommation (mpg)",
+       y = "Fréquence")
+```
+
+### 3.3 Boxplot de la Consommation par Cylindres
+
+Comparons la consommation entre les voitures selon le nombre de cylindres (*cyl*).
+
+```{r}
+# Boxplot de mpg par cyl
+ggplot(mtcars, aes(x = factor(cyl), y = mpg, fill = factor(cyl))) +
+  geom_boxplot() +
+  labs(title = "Consommation par nombre de cylindres",
+       x = "Nombre de cylindres",
+       y = "Consommation (mpg)") +
+  theme(legend.position = "none")
+```
+
+
+## Simulation de données manquantes et imputations
+### Simulation un jeu de données
+Simuler 250 observations avec deux variables : $Y_1$ et $Y_2$. 
+Les variables $Y_1$ et $Y_2$ suivent une loi normale bivariée. La variable $Y_1$ a une moyenne de $100$ et une variance de $169$. La variable $Y_2$ a une moyenne de $12$ et une variance de $9$. La covariance entre les deux variables est de $19,5$; leur corrélation est donc $0,5$. (Utilisez la fonction \texttt{mvnorm} de la librarie \texttt{MASS} si désiré.)
+
+### Simulation de données manquantes
+Remplacer au hasard 50\% des valeurs de $Y_2$ par NA.
+
+### Imputation par différentes méthodes
+- Par la moyenne
+
+- Par la médiane
+
+- Par les plus proche voisins (k=1, k=5, k=10, k=30)
+
