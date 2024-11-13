@@ -138,15 +138,60 @@ ggplot(mtcars, aes(x = factor(cyl), y = mpg, fill = factor(cyl))) +
 ## Simulation de données manquantes et imputations
 ### Simulation un jeu de données
 Simuler 250 observations avec deux variables : $Y_1$ et $Y_2$. 
-Les variables $Y_1$ et $Y_2$ suivent une loi normale bivariée. La variable $Y_1$ a une moyenne de $100$ et une variance de $169$. La variable $Y_2$ a une moyenne de $12$ et une variance de $9$. La covariance entre les deux variables est de $19,5$; leur corrélation est donc $0,5$. (Utilisez la fonction \texttt{mvnorm} de la librarie \texttt{MASS} si désiré.)
+Les variables $Y_1$ et $Y_2$ suivent une loi normale bivariée. La variable $Y_1$ a une moyenne de $100$ et une variance de $169$. La variable $Y_2$ a une moyenne de $12$ et une variance de $9$. La covariance entre les deux variables est de $19,5$; leur corrélation est donc $0,5$. (Utilisez la fonction mvnorm de la librarie MASS si désiré.)
+
+```{r}
+# Simulation du jeu de données
+library(MASS)
+dat = mvrnorm(250, c(100, 12), matrix(c(169, 19.5, 19.5, 9), nrow = 2, ncol = 2, byrow = T))
+dat_0 = dat %>% as.data.frame()
+```
+
 
 ### Simulation de données manquantes
 Remplacer au hasard 50\% des valeurs de $Y_2$ par NA.
 
+```{r}
+# Tirage au hasard de 50 % de ma base
+id <- c(1:250)
+id_na <- sample(id, 0.25*length(id), replace = F)
+
+# Remplacement par des NA
+library(dplyr)
+dat <- dat %>% as.data.frame()
+dat$V2[id_na] <- NA
+
+# Résumé de dat
+summary(dat)
+
+# Renommons V1 et V2
+dat <- dat %>% rename(Y1 = V1, Y2 = V2)
+
+# Nouveaux nom de dat
+names(dat)
+```
+
 ### Imputation par différentes méthodes
 - Par la moyenne
+```{r}
+# Imputation par moyenne
+dat <- dat %>% mutate(Y2 = ifelse(is.na(Y2), mean(Y2, na.rm = T), Y2))
+summary(dat)
+```
+```{r}
+# Visualisation de Y2 avant et après
+hist(dat_0$V2) #avant
+hist(dat$Y2) #après
+```
+
+```{r}
+summary(dat_0)
+summary(dat)
+```
 
 - Par la médiane
 
 - Par les plus proche voisins (k=1, k=5, k=10, k=30)
+
+- Commentez
 
