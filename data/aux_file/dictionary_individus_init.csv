@@ -1,0 +1,47 @@
+var_orig,label_orig,type
+hhid,Idenfiant menage,numeric
+dem_emp_rate,share of employed adults (15-64),numeric
+a_living_n,Num. Living room,numeric
+a_iron,Electric iron,numeric
+a_charcoaliron,Charcoal iron,numeric
+a_gastank,Gas cylinder,numeric
+a_oven,Microwave or electric oven,numeric
+a_fridge,Refrigerator,numeric
+a_freezer,Freezer,numeric
+a_fan,Free-standing fan,numeric
+a_radio,Radio/Radio cassette,numeric
+a_tv,TV set,numeric
+a_washer,"Washing machine, tumble dryer",numeric
+a_ac,Air conditioners/splits (not wall-mounted),numeric
+a_generator,Generator,numeric
+a_car,Personal car,numeric
+a_bike,"Bicycle, racing bike",numeric
+a_homephone,Home phone,numeric
+a_computer,Computer,numeric
+a_printer,Printer/Fax,numeric
+ar_motor_canoe,Motorized canoe,numeric
+c_typehousing,Type of housing (rec of s11q01),numeric
+c_housingocup,Ocupation status (rec of s11q04),numeric
+c_walls,Wall material (rec of s11q18),numeric
+c_roof,Roof material (rec of s11q19),numeric
+c_floor,Floor material (rec of s11q20),numeric
+c_water_dry,Water source dry season (rec of s11q26a),numeric
+c_water_rainy,Water source rainy season (rec of s11q26b),numeric
+c_lighting,lighting (rec of s11q37),numeric
+l_bovines_n,Num Cattle,numeric
+l_sheep_n,Num Sheep,numeric
+l_goats_n,Num Goats,numeric
+l_camels_n,Num Camels,numeric
+l_horses_n,Num Equines (Horses),numeric
+l_donkeys_n,"Num Asins (Donkeys, mules, mules)",numeric
+l_pigs_n,Num Pigs,numeric
+l_rabbits_n,Num Rabbits,numeric
+l_chickens_n,Num Chickens,numeric
+region,Region residence,numeric
+milieu,Milieu residence,numeric
+dem_hgender,Genre du CM,numeric
+dem_logsize,lof of household size,numeric
+dem_hmstat, hmstat (Situation famille du CM),numeric
+dem_heduc, heduc (Education du CM),numeric
+dem_branch, hbranch (Branche activite du CM),numeric
+pauvre,,numeric
