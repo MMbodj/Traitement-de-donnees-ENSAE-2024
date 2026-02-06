@@ -1,0 +1,50 @@
+var_orig,label_orig,type
+activ7j,Situation d'activite au cours des 7 derniers jours,numeric
+activ12m,Situation d'activite au cours des 12 derniers mois,numeric
+aff30j,probleme sante au cours des 30 derniers jours,numeric
+age,Age en annees revolues,numeric
+agemar,Age au premier marriage,numeric
+alfa,Alphabet. sait lire/ecrire,numeric
+alfa2,Alphabet. sait lire/ecrire/comprend.,numeric
+arrmal,Arret activite pour maladie,numeric
+bank,compte banque ou autre,numeric
+branch,Branche activite,numeric
+con30j,Consulte 30 dern. jours,numeric
+country,Code iso3 du Pays,character
+couvmal,Indivu possede unecouverture maladie,numeric
+csp,CSP dansl'emploi principal,numeric
+csp_sec,CSP dansl'emploi secondaire,numeric
+diplome,Diplome le plus eleve,numeric
+durarr,Duree d'arret activite pour raison de maladie,numeric
+educ_hi,Niveau d'education acheve,numeric
+educ_scol,Niveau d'education actuel,numeric
+grappe,Numero de grappe,numeric
+handig,Handicap majeur seul,numeric
+handit,Handicap tout niveau,numeric
+hhid,Idenfiant du menage,numeric
+hhweight,Ponderation menage,numeric
+hos12m,Hospitalisation au cours des 12 der. mois,numeric
+internet,Individu a acces a internet,numeric
+lien,Lien de parente,numeric
+mal30j,Prob. sante 30 dern. jours,numeric
+menage,Numero du menage,numeric
+milieu,Milieu de résidence,numeric
+moustiq,A dormi sous moustiquire la nuit derniere,numeric
+mstat,Situation matrimoniale,numeric
+nation,Nationalité de l'individu,numeric
+numind,Numero d'ordre de l'individu dans le menage,numeric
+persconsult,Personnel de santé consulté au cours des 30 dern. jrs,numeric
+region,Region de residence,numeric
+salaire,Salaire annuel dansl'emploi principal,numeric
+salaire_sec,Salaire annuel dansl'emploi secondaire,numeric
+scol,Frequente l'ecole en 2020/21,numeric
+sectins,Secteur institutionnel de l'emploi principal,numeric
+sectins_sec,Secteur institutionnel de l'emploi secondaire,numeric
+serviceconsult,Service de santé consulté  au cours des 30 dern. jrs,numeric
+sexe,Genre,numeric
+telpor,Individu possede un telephone portable,numeric
+vague,Vague,numeric
+volhor,Volume horaire annuel de travail dans l'emploi principal,numeric
+volhor_sec,Volume horaire annuel de travail dans l'emploi secondaire,numeric
+year,Annee de l'enquete,numeric
+resid,Statut de residence de l'individu dans le menage,numeric

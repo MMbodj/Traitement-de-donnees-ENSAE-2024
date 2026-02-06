@@ -1,0 +1,197 @@
+var_name,label_init
+activ7j,Occupe
+activ7j,TF cherchant emploi
+activ7j,TF cherchant pas
+activ7j,Chomeur
+activ7j,Inactif
+activ7j,Moins de 5 ans
+activ12m,Occupe
+activ12m,Trav. fam.
+activ12m,Non occupe
+activ12m,Moins de 5 ans
+problem_sante_30j,Fièvre/Paludisme
+problem_sante_30j,Diarrhée
+problem_sante_30j,Accident/Blessure
+problem_sante_30j,Problème dentaire
+problem_sante_30j,Problème de peau
+problem_sante_30j,Maladie des yeux
+problem_sante_30j,Problème de tension
+problem_sante_30j,Fièvre typhoïde
+problem_sante_30j,"Problème d'estomac (ulcère, cancer, etc)"
+problem_sante_30j,Mal de gorge
+problem_sante_30j,"Toux, rhume"
+problem_sante_30j,Diabète
+problem_sante_30j,Meningite
+problem_sante_30j,COVID-19
+problem_sante_30j,Complications liées à grossesse ou à l'accouchement
+problem_sante_30j,Douleurs/fatigue
+problem_sante_30j,Anémie/drépanocytose
+problem_sante_30j,Autre
+problem_sante_30j,Maux de ventre
+problem_sante_30j,Probleme respiratoire
+alphabet,Non
+alphabet,Oui
+alphabet_niv_2,Non
+alphabet_niv_2,Oui
+arret_mal,Non
+arret_mal,Oui
+bank,Non
+bank,Oui
+branch_activite,Agriculture
+branch_activite,Elevage/syl./peche
+branch_activite,Indust. extr.
+branch_activite,Autr. indust.
+branch_activite,BTP
+branch_activite,Commerce
+branch_activite,Restaurant/Hotel
+branch_activite,Trans./Comm.
+branch_activite,Education/Sante
+branch_activite,Services perso.
+branch_activite,Aut. services
+consultation_30j,Non
+consultation_30j,Oui
+country,SEN
+couvmal,Non
+couvmal,Oui
+csp,Cadre supérieur
+csp,Cadre moyen/agent de maîtrise
+csp,Ouvrier ou employé qualifié
+csp,Ouvrier ou employé non qualifié
+csp,"Manœuvre, aide ménagère"
+csp,Stagiaire ou Apprenti rénuméré
+csp,Stagiaire ou Apprenti non rénuméré
+csp,Travailleur Familial contribuant pour une entreprise familial
+csp,Travailleur pour compte propre
+csp,Patron
+csp_sec,Cadre supérieur
+csp_sec,Cadre moyen/agent de maîtrise
+csp_sec,Ouvrier ou employé qualifié
+csp_sec,Ouvrier ou employé non qualifié
+csp_sec,"Manœuvre, aide-ménagère"
+csp_sec,Stagiaire ou Apprenti rémunéré
+csp_sec,Stagiaire ou Apprenti non rémunéré
+csp_sec,Travailleur familial contribuant à une entreprise familiale
+csp_sec,Travailleur pour compte propre
+csp_sec,Patron
+diplome,Aucun
+diplome,CEPE
+diplome,BEPC
+diplome,CAP
+diplome,BT
+diplome,BAC
+diplome,"DEUG, DUT, BTS"
+diplome,Licence
+diplome,Maitrise
+diplome,Master/DEA/DESS
+diplome,Doctorat/Phd
+durarr,Moins d'une semaine
+durarr,Entre une et deux semaines
+durarr,Plus de deux semaines
+educ_hi,Aucun
+educ_hi,Maternelle
+educ_hi,Primaire
+educ_hi,Second. gl 1
+educ_hi,Second. tech. 1
+educ_hi,Second. gl 2
+educ_hi,Second. tech. 2
+educ_hi,Postsecondaire
+educ_hi,Superieur
+educ_scol,Maternelle
+educ_scol,Primaire
+educ_scol,Secondaire 1  (Post Primaire) générale
+educ_scol,Secondaire 1  (Post Primaire) technique
+educ_scol,Secondaire 2 générale
+educ_scol,Secondaire 2 technique
+educ_scol,Post secondaire (préparation de diplômes de niveau BAC+2)
+educ_scol,Supérieur
+handi_majeur,Non
+handi_majeur,Oui
+handi_tout_niveau,Non
+handi_tout_niveau,Oui
+hospital_12m,Non
+hospital_12m,Oui
+acces_internet,Non
+acces_internet,Oui
+lien_parente,Chef de ménage
+lien_parente,Conjoint ( e )
+lien_parente,"Fils, Fille"
+lien_parente,"Père, Mère"
+lien_parente,"Petit fils, petite fille"
+lien_parente,Grand-parents
+lien_parente,"Frère, sœur"
+lien_parente,Neveu/Nièce
+lien_parente,Autres Parents du CM/Conjoint
+lien_parente,Personne non apparentée au CM/Conjoint
+lien_parente,Domestique ou parent du domestique
+mal30j,Non
+mal30j,Oui
+milieu,Urbain
+milieu,Rural
+moustiq_nuit_derniere,Non
+moustiq_nuit_derniere,Oui
+sit_mat,Célibataire
+sit_mat,Marié(e) monogame
+sit_mat,Marié(e) polygame
+sit_mat,Union libre
+sit_mat,Veuf(ve)
+sit_mat,Divorcé(e)
+sit_mat,Séparé(e)
+nationalite,Bénin
+nationalite,Burkina Faso
+nationalite,Cape-vert
+nationalite,Cote d'ivoire
+nationalite,Gambie
+nationalite,Ghana
+nationalite,Guinee
+nationalite,Guinée Bissau
+nationalite,Liberia
+nationalite,Mali
+nationalite,Niger
+nationalite,Nigeria
+nationalite,Sénégal
+nationalite,Serra-Leonne
+nationalite,Togo
+nationalite,Autre Afrique
+nationalite,Autre pays hors Afrique
+persconsult,Médecin
+persconsult,Infirmier
+persconsult,Autres
+persconsult,Pas de consultation
+region,DAKAR
+region,ZIGUINCHOR
+region,DIOURBEL
+region,SAINT-LOUIS
+region,TAMBACOUNDA
+region,KAOLACK
+region,THIES
+region,LOUGA
+region,FATICK
+region,KOLDA
+region,MATAM
+region,KAFFRINE
+region,KEDOUGOU
+region,SEDHIOU
+scol_20_21,Non
+scol_20_21,Oui
+sectins,Etat/Collectivités locales
+sectins,Entreprise publique/ parapublique
+sectins,Entreprise Privée
+sectins,Entreprise associative
+sectins,Ménage comme employeur de personnel domestique
+sectins,Organisme international /Ambassade
+sectins_sec,Etat/Collectivités locales
+sectins_sec,Entreprise publique/ parapublique
+sectins_sec,Entreprise privée
+sectins_sec,Entreprise associative
+sectins_sec,Ménage comme employeur de personnel domestique
+sectins_sec,Organisme international. /Ambassade
+serviceconsult,Hôpital/Clinique
+serviceconsult,Dispensaire
+serviceconsult,Autres
+serviceconsult,Pas de consultation
+sexe,Masculin
+sexe,Féminin
+telpor,Non
+telpor,Oui
+resid,Non
+resid,Oui
