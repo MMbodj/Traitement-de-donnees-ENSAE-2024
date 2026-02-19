@@ -27,7 +27,7 @@ df <- read_dta(
 dict_filled <- read_excel(
   file.path(
     AUX_FILE_PATH,
-    "dictionary_ind_filled.xlsx")
+    paste("dictionary_", table_obj, "_filled.xlsx", sep = ""))
 ) |>
   mutate(
     keep = tolower(keep),
@@ -38,7 +38,7 @@ dict_filled <- read_excel(
 dict_init <- read.csv(
   file.path(
     AUX_FILE_PATH,
-    "dictionary_ind_init.csv")
+    paste("dictionary_", table_obj, "_init.csv", sep = ""))
 )
 
 out <- setdiff(unique(dict_init$var_orig), unique(dict_filled$var_orig))
