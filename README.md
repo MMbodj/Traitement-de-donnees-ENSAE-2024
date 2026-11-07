@@ -14,6 +14,15 @@ Bienvenue dans le repository du cours de traitement de données à l'ENSAE (2024
    ```bash
    git clone https://github.com/MMbodj/Traitement-de-donnees-ENSAE-2024.git
    ```
+
+   **Sous Windows :** privilégiez un dossier court, par exemple `C:\cours`, pour limiter la longueur des chemins. Pour autoriser les chemins longs avec Git dès le clonage, utilisez :
+
+   ```bash
+   git clone -c core.longpaths=true https://github.com/MMbodj/Traitement-de-donnees-ENSAE-2024.git
+   ```
+
+   Ce réglage s'applique uniquement au dépôt cloné. Voir la [documentation Git for Windows](https://gitforwindows.org/faq).
+
    NB : Vous pouvez également utiliser l'url pour accéder aux ressources par le web si vous n'êtes pas habitués à utiliser GitHub.
    
 2. Installez les packages R nécessaires via le fichier `requirements.R`.
